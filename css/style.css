@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;400&family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;400&family=Orbitron:wght@500&display=swap");
+/* LISTAS */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;400&family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;400&family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;400&family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;400&family=Orbitron:wght@500&display=swap");
+.headerChino nav .nav li .enlacesChino {
+  font-size: 2em;
+  font-family: "Orbitron", sans-serif;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  border: solid #47ace7;
+  border-radius: 2rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  text-align: center;
+  display: block;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #b4da3a;
+}
+
+footer {
+  padding: 0rem 1rem 0rem 1rem;
+  font-weight: bold;
+  color: black;
+  background-color: #b4da3a;
+  font-family: "Orbitron", sans-serif;
+}
+
+.headerChino {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: #141313;
+  border: solid #47ace7;
+  border-radius: 40%;
+  background-size: cover;
+  padding-top: 4rem;
+  z-index: 1;
+  padding-bottom: 1rem;
+}
+
+.headerMobile div div a {
+  color: var(--colorPrincipal);
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  border-left: solid #b4da3a;
+  border-right: solid #b4da3a;
+}
+
+footer #mail {
+  margin: 0px;
+  text-align: end;
+  position: relative;
+  bottom: 35px;
+}
+footer div .logo2 {
+  margin: 0%;
+  width: 5%;
+}
+footer div .logo3 {
+  margin: 1%;
+  width: 3%;
+}
+footer div .pRedes {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+footer div:hover {
+  -webkit-transform: translate(20px);
+  -o-transform: translate(20px);
+  -moz-transform: translate(20px);
+  transition: all 1s;
+  transform: translate(20px);
+}
+
+/* LISTAS */
+.headerChino nav .nav li .enlacesChino {
+  font-size: 2em;
+  font-family: "Orbitron", sans-serif;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  border: solid #47ace7;
+  border-radius: 2rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  text-align: center;
+  display: block;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #b4da3a;
+}
+
+footer {
+  padding: 0rem 1rem 0rem 1rem;
+  font-weight: bold;
+  color: black;
+  background-color: #b4da3a;
+  font-family: "Orbitron", sans-serif;
+}
+
+.headerChino {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: #141313;
+  border: solid #47ace7;
+  border-radius: 40%;
+  background-size: cover;
+  padding-top: 4rem;
+  z-index: 1;
+  padding-bottom: 1rem;
+}
+
+.headerMobile div div a {
+  color: var(--colorPrincipal);
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  border-left: solid #b4da3a;
+  border-right: solid #b4da3a;
+}
+
+/* nestin o anidamiendo*/
+.headerChino nav {
+  display: flex;
+  justify-content: center;
+}
+.headerChino nav .logo {
+  position: relative;
+  bottom: 20px;
+}
+.headerChino nav .logo:hover {
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transition: all 1s;
+  transform: scale(1.2);
+  transform: translateX(10px);
+}
+.headerChino nav .nav li {
+  float: left;
+  list-style: none;
+}
+.headerChino nav .nav li:hover > ul {
+  display: block;
+}
+.headerChino nav .nav li .enlacesChino:hover {
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transition: all 1s;
+  transform: scale(1.2);
+  background-color: #6bb0d8;
+}
+.headerChino nav .nav li ul {
+  display: none;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headerMobile {
+  background-color: #141313;
+  width: 100%;
+}
+/* LISTAS */
+.headerChino nav .nav li .enlacesChino {
+  font-size: 2em;
+  font-family: "Orbitron", sans-serif;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  border: solid #47ace7;
+  border-radius: 2rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  text-align: center;
+  display: block;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #b4da3a;
+}
+
+footer {
+  padding: 0rem 1rem 0rem 1rem;
+  font-weight: bold;
+  color: black;
+  background-color: #b4da3a;
+  font-family: "Orbitron", sans-serif;
+}
+
+.headerChino {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: #141313;
+  border: solid #47ace7;
+  border-radius: 40%;
+  background-size: cover;
+  padding-top: 4rem;
+  z-index: 1;
+  padding-bottom: 1rem;
+}
+
+.headerMobile div div a {
+  color: var(--colorPrincipal);
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  border-left: solid #b4da3a;
+  border-right: solid #b4da3a;
+}
+
+html {
+  font-size: 16px;
+  font-display: swap;
+}
+
+.bodyChino {
+  background-color: black;
+  margin: 0px;
+  color: #b4da3a;
+}
+
+/*# sourceMappingURL=style.css.map */

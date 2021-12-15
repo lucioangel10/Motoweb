@@ -1,0 +1,224 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;400&family=Orbitron:wght@500&display=swap');
+/* fin imports */
+/* ajustes generales */
+
+:root{
+    --font1:3.5rem;
+    --colorPrincipal: rgb(180, 218, 58);
+    --font2:3rem;
+    --font3:1.5rem;
+    --fontMenu: 2rem;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 16px;
+   
+    font-display: swap;
+}
+
+.bodyChino{
+    background-color: black;
+    margin: 0px;
+    color: var(--colorPrincipal);
+}
+li{
+    list-style: none;
+}
+/* fin ajustes generales */
+/* comienzo estilo header */
+.headerChino{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(20, 19, 19);
+    border: solid rgb(71, 172, 231);
+    border-radius:40%;
+    background-size: cover;
+    padding-top: 4rem;
+    z-index: 1;
+    padding-bottom: 1rem;
+
+    
+}
+.headerPag{
+    position: sticky;
+    top: 0px;
+}
+
+/* start flex */
+
+.menuChino{
+    display: flex;
+    justify-content: center;
+}
+/* end flex */
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    
+    
+   
+}
+.nav >li{
+    float: left;
+
+    
+}
+.nav li:hover > ul {
+    display: block;
+
+   
+}
+
+
+
+
+
+
+
+/* fin estilo header */
+/* comienzo header mobile */
+.headerMobile{
+    background-color: rgb(20, 19, 19);
+   
+    width: 100%;
+}
+.itemHeader > a{
+    color: var(--colorPrincipal);
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    border-left: solid var(--colorPrincipal);
+    border-right: solid var(--colorPrincipal);
+}
+.rowHeader{
+    padding: 2rem 0px;
+}
+.ultimoItemHeader{
+    text-align: end;
+}
+/* fin header mobile */
+
+/* comienzo estilo del main*/
+.h2Chino{
+    margin: 0%;
+    font-size: var(--font2);
+}
+.h3Chino{
+    margin-top: 0%;
+    font-size: var(--font2);
+}
+.h4Chino{
+   margin-bottom: 0%;                
+   font-size: var(--font3);
+}
+.h2Chino, .h3Chino, .h4Chino{
+    font-family: 'Alumni Sans', sans-serif;
+    margin-left: 13%;
+    color: var(--colorPrincipal);
+}
+.enlacesChino{  
+    font-size: var(--fontMenu);
+    font-family: 'Orbitron', sans-serif;
+   text-decoration: none;
+    margin-bottom:  0.5rem; ;
+    border: solid rgb(71, 172, 231);
+    border-radius: 2rem;
+    padding-right:0.5rem;
+    padding-left: 0.5rem;
+    text-align: center;
+    display: block  ;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: var(--colorPrincipal);
+
+}
+
+
+
+
+.imgproducto{
+    width: 18rem;
+    background-image: url("multimedia/img/cuadro1.png");
+    background-size: cover;
+    
+}
+.titulo{
+    font-size: var(--font1);
+    font-family: 'Orbitron', sans-serif;
+    color: var(--colorPrincipal);
+}
+
+.sucursalesContainer{
+    padding-right: 40px;
+}
+/* fin estilo del main*/
+
+/* comienzo estilo del footer*/
+.logo2{
+    margin: 0%;
+    width: 5%;
+}
+.logo3{
+    margin: 1%;
+    width: 3%;
+}
+footer {
+    padding: 0rem 1rem 0rem 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: var(--colorPrincipal);
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+#mail{
+    
+    margin: 0px;
+    text-align: end;
+    position: relative;
+    bottom: 35px;
+}
+.pRedes{
+    margin-top: 0px;
+margin-bottom: 0px;}
+/* fin estilo del footer*/
+/* comienzo animaciones, transformaciones y transiciones */
+.nav li a:hover{
+    background-color: rgb(107, 176, 216);
+    transform: scale(1.2);
+    transition: all 1s;
+}    
+.artChino:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+footer div:hover{
+    
+    transform: translate(20px) ;
+    
+    transition: all 1s;
+    
+}
+.logo:hover{
+    transform: scale(1.2) translateX(10px);
+    transition: all 1s;
+}
+
+.mapLink{
+    font-family: 'Alumni Sans', sans-serif;
+    text-decoration: none;
+    font-size: var(--font2);
+    color: var(--colorPrincipal);
+}
+.logo{
+    position: relative;
+    bottom: 20px;
+}
+.carrouselChino{
+    z-index: 0;
+}
