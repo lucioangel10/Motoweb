@@ -1,4 +1,35 @@
 @import "../base/mixin";
 @import "../base/variables";
 @import "../base/extends";
-
+/*MAIN*/
+.h2Chino{
+    margin-bottom: 0%;                
+    font-size: $font2;
+}
+.h3Chino{
+    margin-bottom: 0%;                
+    font-size: $font2;
+}
+.h4Chino{
+    margin-bottom: 0%;
+    font-size: $font3;
+}
+.h2Chino, .h3Chino, .h4Chino{
+    font-family: 'Alumni Sans', sans-serif;
+    margin-left: 13%;
+    color: var(--colorPrincipal);
+}
+.imgproducto{
+    width: 18rem;
+    background-image: url("multimedia/img/cuadro1.png");
+    background-size: cover;
+    
+}
+.titulo{
+    font-size: var(--font1);
+    font-family: 'Orbitron', sans-serif;
+    color: var(--colorPrincipal);
+}
+.sucursalesContainer{
+    padding-right: 40px;
+}
