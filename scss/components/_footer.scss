@@ -28,6 +28,7 @@ footer{
         }
         &:hover {
             @include transform(translate(20px));
+            color: nth($colores,6);
         }
     }
     

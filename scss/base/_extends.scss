@@ -31,8 +31,6 @@
     font-family: 'Orbitron', sans-serif;
 }
 %header {
-    position: sticky;
-    top: 0px;
     width: 100%;
     background-color: nth($colores, 3);
     border: solid nth($colores,4);
@@ -42,11 +40,17 @@
     z-index: 1;
     padding-bottom: 1rem;
 }
+
+%titulo{
+    font-size: $font1;
+    font-family: 'Orbitron', sans-serif;
+    color: var(--colorPrincipal);
+}
 %linkMap {
     font-family: 'Alumni Sans', sans-serif;
     text-decoration: none;
-    font-size: var(--font2);
-    color: var(--colorPrincipal);
+    font-size: $font2;
+    color: nth($colores,1);
 }
 %headerMobile {
     color: var(--colorPrincipal);

@@ -2,34 +2,63 @@
 @import "../base/variables";
 @import "../base/extends";
 /*MAIN*/
-.h2Chino{
-    margin-bottom: 0%;                
-    font-size: $font2;
-}
-.h3Chino{
-    margin-bottom: 0%;                
-    font-size: $font2;
-}
-.h4Chino{
-    margin-bottom: 0%;
-    font-size: $font3;
-}
-.h2Chino, .h3Chino, .h4Chino{
-    font-family: 'Alumni Sans', sans-serif;
-    margin-left: 13%;
-    color: var(--colorPrincipal);
-}
-.imgproducto{
-    width: 18rem;
-    background-image: url("multimedia/img/cuadro1.png");
-    background-size: cover;
-    
-}
+
+
 .titulo{
-    font-size: var(--font1);
-    font-family: 'Orbitron', sans-serif;
-    color: var(--colorPrincipal);
+    @extend %titulo;
 }
 .sucursalesContainer{
     padding-right: 40px;
+}
+.mapaLink{
+   @extend %linkMap;
+   &:hover{
+       @include transform(scale(1.1));
+       color: nth($colores,6 );
+   }
+}
+
+
+div{
+    div{
+        .artChino{
+            
+            margin: 40px 30px;
+            
+            box-shadow:10px 10px 20px  nth($colores,5), -10px -10px 20px  nth($colores,5), 10px -10px 20px  nth($colores,5),-10px 10px 20px  nth($colores,5);
+            &:hover{
+                box-shadow:10px 10px 20px  nth($colores,1), -10px -10px 20px  nth($colores,1), 10px -10px 20px  nth($colores,1),-10px 10px 20px  nth($colores,1);
+                border:10px solid nth($colores,1);
+                @include transform(scale(1.1));
+                color: nth($colores,4 );
+
+            }
+           
+            .h4Chino{
+                margin-bottom: 0%;
+                font-size: $font3;
+                font-family: 'Alumni Sans', sans-serif;
+                margin-left: 13%;               
+            }
+            .imgproducto{
+                width: 18rem;
+                &:hover{
+                    @include transform(scale(1.2));
+                }
+            }
+            .h2Chino{
+                font-family: 'Alumni Sans', sans-serif;
+                margin-left: 13%;
+                font-size: $font2;
+
+            }
+            .h3Chino{
+                font-family: 'Alumni Sans', sans-serif;
+                margin-left: 13%;
+                font-size: $font2;
+
+            }
+        }
+
+    }    
 }

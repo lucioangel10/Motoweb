@@ -36,16 +36,27 @@ footer {
 }
 
 .headerChino {
-  position: sticky;
-  top: 0px;
   width: 100%;
-  background-color: #141313;
+  background-color: #110d0d;
   border: solid #47ace7;
   border-radius: 40%;
   background-size: cover;
   padding-top: 4rem;
   z-index: 1;
   padding-bottom: 1rem;
+}
+
+.titulo {
+  font-size: 3.5em;
+  font-family: "Orbitron", sans-serif;
+  color: var(--colorPrincipal);
+}
+
+.mapaLink {
+  font-family: "Alumni Sans", sans-serif;
+  text-decoration: none;
+  font-size: 3em;
+  color: #b4da3a;
 }
 
 .headerMobile div div a {
@@ -80,6 +91,7 @@ footer div:hover {
   -moz-transform: translate(20px);
   transition: all 1s;
   transform: translate(20px);
+  color: #c02626;
 }
 
 /* LISTAS */
@@ -108,16 +120,27 @@ footer {
 }
 
 .headerChino {
-  position: sticky;
-  top: 0px;
   width: 100%;
-  background-color: #141313;
+  background-color: #110d0d;
   border: solid #47ace7;
   border-radius: 40%;
   background-size: cover;
   padding-top: 4rem;
   z-index: 1;
   padding-bottom: 1rem;
+}
+
+.titulo {
+  font-size: 3.5em;
+  font-family: "Orbitron", sans-serif;
+  color: var(--colorPrincipal);
+}
+
+.mapaLink {
+  font-family: "Alumni Sans", sans-serif;
+  text-decoration: none;
+  font-size: 3em;
+  color: #b4da3a;
 }
 
 .headerMobile div div a {
@@ -138,12 +161,11 @@ footer {
   bottom: 20px;
 }
 .headerChino nav .logo:hover {
-  -webkit-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2) translateX(10px) translateY(-10px);
+  -o-transform: scale(1.2) translateX(10px) translateY(-10px);
+  -moz-transform: scale(1.2) translateX(10px) translateY(-10px);
   transition: all 1s;
-  transform: scale(1.2);
-  transform: translateX(10px);
+  transform: scale(1.2) translateX(10px) translateY(-10px);
 }
 .headerChino nav .nav li {
   float: left;
@@ -199,16 +221,27 @@ footer {
 }
 
 .headerChino {
-  position: sticky;
-  top: 0px;
   width: 100%;
-  background-color: #141313;
+  background-color: #110d0d;
   border: solid #47ace7;
   border-radius: 40%;
   background-size: cover;
   padding-top: 4rem;
   z-index: 1;
   padding-bottom: 1rem;
+}
+
+.titulo {
+  font-size: 3.5em;
+  font-family: "Orbitron", sans-serif;
+  color: var(--colorPrincipal);
+}
+
+.mapaLink {
+  font-family: "Alumni Sans", sans-serif;
+  text-decoration: none;
+  font-size: 3em;
+  color: #b4da3a;
 }
 
 .headerMobile div div a {
@@ -220,41 +253,58 @@ footer {
 }
 
 /*MAIN*/
-.h2Chino {
-  margin-bottom: 0%;
-  font-size: 3em;
-}
-
-.h3Chino {
-  margin-bottom: 0%;
-  font-size: 3em;
-}
-
-.h4Chino {
-  margin-bottom: 0%;
-  font-size: 1.5em;
-}
-
-.h2Chino, .h3Chino, .h4Chino {
-  font-family: "Alumni Sans", sans-serif;
-  margin-left: 13%;
-  color: var(--colorPrincipal);
-}
-
-.imgproducto {
-  width: 18rem;
-  background-image: url("multimedia/img/cuadro1.png");
-  background-size: cover;
-}
-
-.titulo {
-  font-size: var(--font1);
-  font-family: "Orbitron", sans-serif;
-  color: var(--colorPrincipal);
-}
-
 .sucursalesContainer {
   padding-right: 40px;
+}
+
+.mapaLink:hover {
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transition: all 1s;
+  transform: scale(1.1);
+  color: #c02626;
+}
+
+div div .artChino {
+  margin: 40px 30px;
+  box-shadow: 10px 10px 20px #6bb0d8, -10px -10px 20px #6bb0d8, 10px -10px 20px #6bb0d8, -10px 10px 20px #6bb0d8;
+}
+div div .artChino:hover {
+  box-shadow: 10px 10px 20px #b4da3a, -10px -10px 20px #b4da3a, 10px -10px 20px #b4da3a, -10px 10px 20px #b4da3a;
+  border: 10px solid #b4da3a;
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transition: all 1s;
+  transform: scale(1.1);
+  color: #47ace7;
+}
+div div .artChino .h4Chino {
+  margin-bottom: 0%;
+  font-size: 1.5em;
+  font-family: "Alumni Sans", sans-serif;
+  margin-left: 13%;
+}
+div div .artChino .imgproducto {
+  width: 18rem;
+}
+div div .artChino .imgproducto:hover {
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transition: all 1s;
+  transform: scale(1.2);
+}
+div div .artChino .h2Chino {
+  font-family: "Alumni Sans", sans-serif;
+  margin-left: 13%;
+  font-size: 3em;
+}
+div div .artChino .h3Chino {
+  font-family: "Alumni Sans", sans-serif;
+  margin-left: 13%;
+  font-size: 3em;
 }
 
 html {

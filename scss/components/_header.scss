@@ -11,8 +11,8 @@
             position: relative;
             bottom: 20px;
             &:hover {
-                @include transform(scale(1.2));
-                transform: translateX(10px);
+                @include transform(scale(1.2) translateX(10px) translateY(-10px));
+                
             }
         }
         .nav {
