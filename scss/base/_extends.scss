@@ -44,7 +44,7 @@
 %titulo{
     font-size: $font1;
     font-family: 'Orbitron', sans-serif;
-    color: var(--colorPrincipal);
+    color: nth($colores,1);
 }
 %linkMap {
     font-family: 'Alumni Sans', sans-serif;
@@ -53,7 +53,7 @@
     color: nth($colores,1);
 }
 %headerMobile {
-    color: var(--colorPrincipal);
+    color: nth($colores, 1);
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     border-left: solid nth($colores,1);

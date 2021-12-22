@@ -12,16 +12,18 @@
             bottom: 20px;
             &:hover {
                 @include transform(scale(1.2) translateX(10px) translateY(-10px));
-                
-            }
+            }            
         }
         .nav {
             li {
-                
-                float: left;
                 list-style: none;
+                transform: translateX(-20px);
+                z-index: 990;
+                padding-right: 0px;
                 &:hover > ul {
                    display: block;
+                   background-color: nth($colores,3);
+                   
 
                 }
                 .enlacesChino {
@@ -35,7 +37,7 @@
                 ul {
                     display: none;
                     position: absolute;
-                    
+                    right: -29px;
                 }
             }
         }
