@@ -31,7 +31,7 @@
                     &:hover {
                         @include transform(scale(1.2));
                         background-color: nth($colores, 5);
-                        
+                        color: nth($colores,6);
                     }
                 }
                 ul {

@@ -37,9 +37,7 @@ footer {
 
 .headerChino {
   width: 100%;
-  background-color: #110d0d;
-  border: solid #47ace7;
-  border-radius: 40%;
+  background-color: black;
   background-size: cover;
   padding-top: 4rem;
   z-index: 1;
@@ -50,6 +48,9 @@ footer {
   font-size: 3.5em;
   font-family: "Orbitron", sans-serif;
   color: #b4da3a;
+  background-color: black;
+  border-bottom: solid #b4da3a;
+  text-align: center;
 }
 
 .mapaLink {
@@ -121,9 +122,7 @@ footer {
 
 .headerChino {
   width: 100%;
-  background-color: #110d0d;
-  border: solid #47ace7;
-  border-radius: 40%;
+  background-color: black;
   background-size: cover;
   padding-top: 4rem;
   z-index: 1;
@@ -134,6 +133,9 @@ footer {
   font-size: 3.5em;
   font-family: "Orbitron", sans-serif;
   color: #b4da3a;
+  background-color: black;
+  border-bottom: solid #b4da3a;
+  text-align: center;
 }
 
 .mapaLink {
@@ -175,7 +177,7 @@ footer {
 }
 .headerChino nav .nav li:hover > ul {
   display: block;
-  background-color: #110d0d;
+  background-color: #080505;
 }
 .headerChino nav .nav li .enlacesChino:hover {
   -webkit-transform: scale(1.2);
@@ -184,6 +186,7 @@ footer {
   transition: all 1s;
   transform: scale(1.2);
   background-color: #6bb0d8;
+  color: #c02626;
 }
 .headerChino nav .nav li ul {
   display: none;
@@ -226,9 +229,7 @@ footer {
 
 .headerChino {
   width: 100%;
-  background-color: #110d0d;
-  border: solid #47ace7;
-  border-radius: 40%;
+  background-color: black;
   background-size: cover;
   padding-top: 4rem;
   z-index: 1;
@@ -239,6 +240,9 @@ footer {
   font-size: 3.5em;
   font-family: "Orbitron", sans-serif;
   color: #b4da3a;
+  background-color: black;
+  border-bottom: solid #b4da3a;
+  text-align: center;
 }
 
 .mapaLink {
@@ -507,7 +511,7 @@ html {
 }
 
 .bodyChino {
-  background-color: black;
+  background-color: #080505;
   margin: 0px;
   color: #b4da3a;
 }

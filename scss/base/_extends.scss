@@ -32,9 +32,7 @@
 }
 %header {
     width: 100%;
-    background-color: nth($colores, 3);
-    border: solid nth($colores,4);
-    border-radius:40%;
+    background-color: nth($colores, 2);
     background-size: cover;
     padding-top: 4rem;
     z-index: 1;
@@ -45,6 +43,9 @@
     font-size: $font1;
     font-family: 'Orbitron', sans-serif;
     color: nth($colores,1);
+    background-color: nth($colores,2);    
+    border-bottom: solid nth($colores,1 );
+    text-align: center;
 }
 %linkMap {
     font-family: 'Alumni Sans', sans-serif;
