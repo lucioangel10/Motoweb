@@ -1,5 +1,8 @@
 
 
+   
+
+
 // cotizador de cuotas
 class Simulador {
     constructor(precio, anticipo) {
@@ -47,15 +50,22 @@ function pedirMoto() {
 }
 function pedirAnticipo() {
 
-    anticipo = parseFloat(prompt('Si desea entregar un anticipo ingreseló, sino precione aceptar'));
+    anticipo = parseFloat(prompt('Si desea entregar un anticipo ingreseló, sino ingrese "0"'));
 }
-function corroborarAnticipo(anticipo, precio){
+function malAnticipo(anticipo, precio){
     if(anticipo>precio || isNaN(anticipo) || anticipo<0){
-        alert("el dato ingresado no es valido")
-        return false;
+       
+        return true;
 
     }
-    return true;
+    return false;
+}
+function contarNum(inicio,fin){
+    const arrAux=[];
+    for(i=inicio;i<=fin;i++){
+        arrAux.push(i)
+    }
+    return arrAux;
 }
 
 
@@ -76,6 +86,7 @@ motos.push(new Moto('xtz 250', '997000', 'onoff', 'yamaha'));
 
 let ingreso;
 let anticipo;
+const caracterNum=contarNum(0,9);
 
 
 const arrayNombre=motos.map((el)=>el.nombre);
@@ -85,63 +96,8 @@ const arrayNombre=motos.map((el)=>el.nombre);
 
 
 
-
-
-for (let i = 1; i > 0; i++) {
-
-    pedirMoto();
-    pedirAnticipo();
-
-    let verificarMoto = motos.some((el) => el.nombre == ingreso);
-    if (verificarMoto == true && corroborarAnticipo(anticipo, ingreso)) {
-        let seleccion=motos.find((el)=>el.nombre.includes(ingreso));
-        let simulador= new Simulador(seleccion.precio, anticipo);
-        simulador.mostrar();
     
-    } else {
-        alert('Los valores ingresados no se han encontrado o no son validos.\nModelos válidos:\n'+arrayNombre.join(", "))
-    }
-}
-        
-    
-
-/*PRUEBA NUEVO SISTEMA EFICIENTE*/
-/*
-let ingreso;
-let anticipo;
-
-
-const arrayNombre = motos.map((el) => el.nombre);
-
-
-
-
-
-
-
-ESTO NO VA
 for (let i = 1; i > 0; i++) {
-
-    pedirMoto();
-    pedirAnticipo();
-
-    let verificarMoto = motos.some((el) => el.nombre == ingreso);
-    if (verificarMoto == true && corroborarAnticipo(anticipo, seleccion.precio)) {
-        let seleccion=motos.find((el)=>el.nombre.includes(ingreso));
-        let simulador= new Simulador(seleccion.precio, anticipo);
-        simulador.mostrar();
-    
-    } else {
-        alert('Los valores ingresados no se han encontrado o no son validos.\nModelos válidos:\n'+arrayNombre.join(", "))
-    }
-}
-  ESTO DE ARRIBA NO VA    
-
-
-
-
-for (let i = 1; i > 0; i++) {
-
     pedirMoto();
     let verificarMoto = motos.some((el) => el.nombre == ingreso);
     if (verificarMoto == false) {
@@ -151,12 +107,12 @@ for (let i = 1; i > 0; i++) {
     let seleccion = motos.find((el) => el.nombre.includes(ingreso));
     for (let i = 1; i > 0; i++) {
         pedirAnticipo();
-        if (corroborarAnticipo(anticipo, seleccion.precio) == false) {
-            alert('Los carácteres indicados no son válidos. \nO tu anticipo supera al precio del vehículo.\nCarácteres válidos: \n' + arrayNum.join(", "));
-            continue
+        if (malAnticipo(anticipo, seleccion.precio)) {
+            alert('Su anticípo no es válido.\nLos carácteres disponibles para esta opcion son:\n' + caracterNum.join(", "));
+            continue;
         }
         break;
     }
     let simulador = new Simulador(seleccion.precio, anticipo);
     simulador.mostrar();
-}*/
+}
