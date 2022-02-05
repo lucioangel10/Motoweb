@@ -48,9 +48,9 @@ function pedirMoto() {
     ingreso = prompt('Ingrese el modelo que desea cotizar:');
     ingreso = ingreso.toUpperCase();
 }
-function pedirAnticipo() {
+function pedirAnticipo(precio) {
 
-    anticipo = parseFloat(prompt('Si desea entregar un anticipo ingreseló, sino ingrese "0"'));
+    anticipo = parseFloat(prompt(`El precio del modelo seleccionado es de $${precio}.\nSi desea entregar un anticipo ingreseló, sino ingrese "0"`));
 }
 function malAnticipo(anticipo, precio){
     if(anticipo>precio || isNaN(anticipo) || anticipo<0){
@@ -106,7 +106,7 @@ for (let i = 1; i > 0; i++) {
     }
     let seleccion = motos.find((el) => el.nombre.includes(ingreso));
     for (let i = 1; i > 0; i++) {
-        pedirAnticipo();
+        pedirAnticipo(seleccion.precio);
         if (malAnticipo(anticipo, seleccion.precio)) {
             alert('Su anticípo no es válido.\nLos carácteres disponibles para esta opcion son:\n' + caracterNum.join(", "));
             continue;
