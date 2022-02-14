@@ -116,7 +116,7 @@ let simulaciones = document.querySelectorAll(".artChino .imgproducto");
 let iSimulacion = 0
 for (const simulacion of simulaciones) {
 
-    simulacion.onclick = () => console.log('click moto');
+    simulacion.onclick = () => {console.log('DESAFIO AGREGAR EVENTOS. ')};
 
     // simulacion.onclick = simularCuotas(iSimulacion,motosPopulares);
     iSimulacion++;
